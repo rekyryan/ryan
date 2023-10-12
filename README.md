@@ -29,4 +29,4 @@ Edit `index.html`
 * See lines 20 and 21.
 * Change line 20 into your own **brand** and line 21 to have your own URL.
 * Line2 30-51 contains the list of featured packages. You can edit those or remove them totally.
-* Replace CydiaIcon.png.
+* Replace Icon.png.
