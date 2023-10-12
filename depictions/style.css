@@ -39,12 +39,6 @@ html.can-touch .link-item:active{ /* disable hover effect when input is touch */
     margin-right: 10px;
 }
 
-body{
-	font-family: 'Quicksand', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #1f1f1f;
@@ -74,4 +68,13 @@ body{
         background-color: #1f1f1f;
     }
 
+}
+
+body {
+  background-image: url('Cover.jpeg');
+  background-size: cover;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
 }
