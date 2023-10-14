@@ -17,3 +17,4 @@ sr.reveal('.hero-text',{delay:200, origin:'top'});
 sr.reveal('.hero-img',{delay:450, origin:'right'});
 sr.reveal('.icon',{delay:500, origin:'left'});
 sr.reveal('.scroll-down',{delay:500, origin:'right'});
+sr.reveal('.social',{delay:400, origin:'bottom'});
