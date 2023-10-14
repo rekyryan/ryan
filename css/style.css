@@ -246,3 +246,27 @@ section{
 		height: auto;
 	}
 }
+
+.social{
+	position: fixed;
+	bottom: 3%;
+	left: 6%;
+	display: none;
+}
+.social i{
+	display: inline-block;
+	color: white;
+	font-size: 20px;
+	margin-right: 15px;
+	transition: all ease .50s;
+}
+.social i:hover{
+	color: #00C9B7;
+	transform: translateY(-5px);
+}
+
+@media (max-width: 990px){
+	.social{
+		display: flex;
+	}
+}
