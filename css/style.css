@@ -221,8 +221,8 @@ section{
 		position: absolute;
 		top: 100%;
 		right: -100%;
-		width: 300px;
-		height: 40vh;
+		width: 200px;
+		height: 50vh;
 		background: #009C87;
 		display: flex;
 		align-items: center;
