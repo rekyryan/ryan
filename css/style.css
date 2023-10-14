@@ -86,7 +86,7 @@ section{
 	margin-bottom: 40px;
 }
 .hero-img img{
-	width: 400px;
+	width: 450px;
 	height: auto;
 }
 .hero-text a{
@@ -126,7 +126,7 @@ section{
 .icon i{
 	display: block;
 	margin: 26px 0;
-	font-size: 24px;
+	font-size: 30px;
 	color: white;
 	transition: all .50s ease;
 }
