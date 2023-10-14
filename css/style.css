@@ -136,13 +136,13 @@ section{
 }
 .scroll-down{
 	position: absolute;
-	bottom: 6%;
+	bottom: 4%;
 	right: 9%;
 }
 .scroll-down i{
 	display: block;
-	padding: 12px;
-	font-size: 25px;
+	padding: 10px;
+	font-size: 21px;
 	color: white;
 	background: #00C9B7;
 	border-radius: 30px;
@@ -162,7 +162,7 @@ section{
 		transition: .2s;
 	}
 	.scroll-down{
-		right: 3%;
+		right: 2%;
 		transition: .2s;
 	}
 }
