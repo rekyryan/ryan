@@ -233,19 +233,19 @@ section{
 		position: absolute;
 		top: 100%;
 		right: -100%;
-		width: 200px;
-		height: 50vh;
+		width: 170px;
+		height: 30vh;
 		background: #009C87;
 		display: flex;
 		align-items: center;
 		flex-direction: column;
-		padding: 50px 20px;
+		padding: 30px 20px;
 		transition: all .55s ease;
 		border-radius: 15px;
 	}
 	.navlist a{
 		display: block;
-		margin: 17px 0;
+		margin: 8px 0;
 		margin-left: 0;
 	}
 	.navlist.open{
