@@ -176,7 +176,7 @@ section{
 	display: inline-block;
 	color: white;
 	font-size: 30px;
-	margin-right: 30px;
+	margin-right: 50px;
 	transition: all ease .50s;
 }
 .button i:hover{
