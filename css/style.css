@@ -64,13 +64,15 @@ header{
 	min-height: 100vh;
 	background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
 	position: relative;
+	background-size: cover;
+    background-position: center;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	align-items: center;
 	gap: 2rem;
 }
 section{
-	padding: 0 19%;
+	padding: 0 18%;
 }
 .hero-text h5{
 	font-size: 14px;
@@ -80,10 +82,10 @@ section{
 }
 .hero-text h1{
 	font-family: 'Permanent Marker', cursive;
-	font-size: 90px;
+	font-size: 80px;
 	line-height: 1;
 	color: white;
-	margin: 0 0 45px;
+	margin: 0 0 37px;
 }
 .hero-text h4{
 	font-size: 18px;
@@ -93,7 +95,7 @@ section{
 }
 .hero-text p{
 	color: white;
-	font-size: 15px;
+	font-size: 17px;
 	line-height: 1.9;
 	margin-bottom: 40px;
 }
@@ -137,14 +139,14 @@ section{
 }
 .icon i{
 	display: block;
-	margin: 26px 0;
+	margin: 30px 0;
 	font-size: 30px;
 	color: white;
 	transition: all .50s ease;
 }
 .icon i:hover{
 	color: #00C9B7;
-	transform: translateY(-5px);
+	transform: translateX(5px);
 }
 .scroll-down{
 	position: absolute;
@@ -161,6 +163,24 @@ section{
 	transition: all .50s ease;
 }
 .scroll-down i:hover{
+	transform: translateY(-5px);
+}
+
+.button{
+	position: fixed;
+	bottom: 13%;
+	left: 18%;
+	display: flex;
+}
+.button i{
+	display: inline-block;
+	color: white;
+	font-size: 30px;
+	margin-right: 30px;
+	transition: all ease .50s;
+}
+.button i:hover{
+	color: #00C9B7;
 	transform: translateY(-5px);
 }
 
@@ -223,6 +243,9 @@ section{
 	.scroll-down{
 		display: none;
 	}
+	.button{
+		display: none;
+	}
 }
 
 @media (max-width: 990px){
@@ -234,7 +257,7 @@ section{
 		top: 100%;
 		right: -100%;
 		width: 170px;
-		height: 30vh;
+		height: 20vh;
 		background: #009C87;
 		display: flex;
 		align-items: center;
