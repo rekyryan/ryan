@@ -18,6 +18,9 @@ header{
 	padding: 33px 9%;
 	background: transparent;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	color: #333;
+    transition: text-shadow 0.3s ease;
+    text-shadow: 0 3px 5px #00FFFF;
 }
 
 .logo{
@@ -103,23 +106,41 @@ section{
 	width: 450px;
 	height: auto;
 }
-.hero-text a{
-	display: inline-block;
-	color: white;
-	background: #051937;
-	border: 1px solid transparent;
-	padding: 12px 30px;
-	line-height: 1.4;
-	font-size: 14px;
-	font-weight: 500;
-	border-radius: 30px;
-	text-transform: uppercase;
-	transition: all .55s ease;
+.hero-text a {
+    display: inline-block;
+    color: white;
+    background: #051937;
+    border: 2px solid #051937;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 8px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+    box-shadow: 0 3px 5px #00FFFF;
 }
-.hero-text a:hover{
-	background: transparent;
-	border: 1px solid white;
-	transform: translateX(8px);
+.hero-text a:hover {
+    background: transparent;
+    border: 2px solid white;
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px 4px #00FFFF;
+    animation: glow 5s infinite alternate;
+}
+
+@keyframes glow{
+    0% {
+        box-shadow: 0 9px 20px #051937;
+    }
+    50% {
+        box-shadow: 0 0 20px 3px #00FFFF;
+    }
+    100% {
+        box-shadow: 0 9px 20px #051937;
+    }
 }
 .hero-text a.ctaa{
 	background: transparent;
@@ -133,7 +154,7 @@ section{
 
 .icon{
 	position: absolute;
-	top: 50%;
+	top: 47%;
 	padding: 0 9%;
 	transform: translateY(-50px);
 }
@@ -149,14 +170,14 @@ section{
 	transform: translateX(5px);
 }
 .scroll-down{
-	position: absolute;
+	position: fixed;
 	bottom: 4%;
 	right: 9%;
 }
 .scroll-down i{
-	display: block;
+	display: flex;
 	padding: 10px;
-	font-size: 21px;
+	font-size: 20px;
 	color: white;
 	background: #00C9B7;
 	border-radius: 30px;
@@ -167,8 +188,8 @@ section{
 }
 
 .button{
-	position: fixed;
-	bottom: 13%;
+	position: absolute;
+	bottom: 11%;
 	left: 18%;
 	display: flex;
 }
@@ -238,9 +259,6 @@ section{
 		grid-template-columns: 1fr;
 	}
 	.icon{
-		display: none;
-	}
-	.scroll-down{
 		display: none;
 	}
 	.button{
