@@ -1,0 +1,61 @@
+/* This CSS doesn't affect the generated CSS. It just makes the input form look nicer. */
+body {
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.input-container {
+  flex: 0 0 auto; /* in body */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 25px;
+}
+
+.input-container label {
+  flex: 0 0 210px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.small-text {
+  font-weight: normal;
+}
+
+.input-container input {
+  flex: 1 1 auto;
+}
+
+.buttons-container {
+  flex: 0 0 auto; /* in body */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 25px;
+}
+
+.buttons-container button + button {
+  margin-left: 2px;
+}
+
+.css-output-container {
+  flex: 1 1 auto; /* in body */
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.css-output-container textarea {
+  flex: 1 1 auto;
+  min-height: 100px;
+}
+
+.footnote-container {
+  flex: 0 0 auto; /* in body */
+  font-size: 0.85rem;
+  margin-top: 2px;
+  padding-bottom: 25px; /* because the bottom gets cut-off on CodePen for some reason */
+}
