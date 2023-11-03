@@ -6,18 +6,34 @@ body {
   height: 100vh;
 }
 
-.input-container {
+.message {
+  font-size: 0.85rem;
+  text-align: right;
+  padding-bottom: 10px;
+}
+
+.input-row {
   flex: 0 0 auto; /* in body */
   display: flex;
   flex-direction: row;
-  align-items: center;
+  justify-content: stretch;
+  align-items: flex-start;
+}
+
+.input-container {
+  flex: 0 0 50%; /* in row */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
   min-height: 25px;
 }
 
 .input-container label {
-  flex: 0 0 210px;
+  flex: 1 1 auto; /* in container */
   font-size: 0.85rem;
   font-weight: bold;
+  text-align: right;
+  padding: 0 10px;
 }
 
 .small-text {
@@ -25,7 +41,22 @@ body {
 }
 
 .input-container input {
-  flex: 1 1 auto;
+  flex: 0 0 50%; /* in container */
+}
+
+.checkbox-container {
+  flex: 0 0 50%; /* in row */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  min-height: 25px;
+}
+
+.checkbox-container label {
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-align: left;
 }
 
 .buttons-container {

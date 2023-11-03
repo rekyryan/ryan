@@ -1,4 +1,4 @@
-<!-- Discord StreamKit Overlay: Head-Bobbly CSS generator-->
+<!-- Discord StreamKit Overlay-->
 
 <!DOCTYPE html>
 <html>
@@ -16,29 +16,81 @@
 
 </head>
 <body>
-<div class="input-container">
-  <label>
-    Discord User ID
-    <span class="small-text">(<a href="https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-" target="_blank">Where is this?</a>)</span>
-  </label>
-  <input id="discord-id" type="text" placeholder=""></input>
+<div class="message">
+  Tip: to change additional properties, click "Change View", select Editor View, and modify the Javascript variables!
 </div>
 
-<div class="input-container">
-  <label>
-    Image URL
-  </label>
-  <input id="normal-image-url" type="text"></input>
+<div class="input-row">
+  <div class="input-container">
+    <label>
+      Browser Source Width
+    </label>
+    <input id="browser-source-width" type="number" value="800"></input>
+  </div>
+
+  <div class="input-container">
+    <label>
+      Browser Source Height
+    </label>
+    <input id="browser-source-height" type="number" value="600"></input>
+  </div>
 </div>
 
-<div class="input-container">
-  <label>
-    Talking Image URL
-    <span class="small-text">(Optional)</span>
-  </label>
-  <input id="talking-image-url" type="text"></input>
+<div class="input-row">
+  <div class="input-container">
+    <label>
+      People per Row
+    </label>
+    <input id="people-per-row" type="number" value="3"></input>
+  </div>
+
+  <div class="input-container">
+    <label>
+      Number of Rows
+    </label>
+    <input id="number-of-rows" type="number" value="2"></input>
+  </div>
 </div>
 
+<div class="input-row">
+  <div class="input-container">
+    <label>
+      Name Font Size
+    </label>
+    <input id="name-font-size" type="number" value="36"></input>
+  </div>
+
+  <div class="input-container">
+    <label>
+      Avatar Bounce Height when Speaking
+    </label>
+    <input id="avatar-bounce-height" type="number" value="10"></input>
+  </div>
+</div>
+
+<div class="input-row">
+  <div class="checkbox-container">
+    <input id="square-avatars" type="checkbox"></input>
+    <label for="square-avatars">Square Avatars</label>
+  </div>
+
+  <div class="checkbox-container">
+    <input id="full-width-name-backgrounds" type="checkbox"></input>
+    <label for="full-width-name-backgrounds">Full-Width Name Backgrounds</label>
+  </div>
+</div>
+
+<div class="input-row">
+  <div class="input-container">
+    <label>
+      Hide Discord User ID
+      <span class="small-text">(Optional)</span>
+      <span class="small-text">(<a href="https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-" target="_blank">where is this?</a>)</span>
+    </label>
+    <input id="hide-discord-id" type="text" placeholder="12345678901234567890"></input>
+  </div>
+</div>
+  
 <div class="buttons-container">
   <button id="generate-css" onclick="generateCSS()">
     Generate CSS
@@ -54,9 +106,9 @@
 
 <div class="footnote-container">
   For use with a
-  <a href="https://streamkit.discord.com/overlay" target="_blank">Discord StreamKit Overlay</a> 
-  Browser Source in OBS.
+  <a href="https://streamkit.discord.com/overlay" target="_blank">Discord StreamKit Overlay.</a> Browser Source in OBS.
 </div>
+
   <!---custom js link--->
   <script src="js/script.js"></script>
 </body>
