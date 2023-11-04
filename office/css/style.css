@@ -14,29 +14,22 @@
 
 /* Customize the scrollbar track */
 ::-webkit-scrollbar {
-  width: 9px; /* You can adjust the width as needed */
+  width: 9px;
 }
 
 /* Customize the scrollbar thumb (the draggable part) */
 ::-webkit-scrollbar-thumb {
-  background-color: #0FFF; /* Change to your desired color */
+  background-color: #0FFF;
 }
 
 /* Customize the scrollbar track on hover (optional) */
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #0FFF; /* Change to a different color on hover */
-}
-/* Customize the scrollbar track */
-body {
-  scrollbar-face-color: #0FFF; /* Change to your desired color */
-}
-
-/* Customize the scrollbar thumb (the draggable part) */
-body {
-  scrollbar-shadow-color: #0FFF; /* Change to your desired color */
+  background-color: #0FFF;
 }
 
 body {
+  scrollbar-face-color: #0FFF;
+  scrollbar-shadow-color: #0FFF;
   background-color: var(--background-color);
   color: var(--text-color);
 }
@@ -54,6 +47,7 @@ i {
 }
 
 button {
-  background-color: var(--secondary-color);
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
   color: white;
+  cursor: pointer;
 }
