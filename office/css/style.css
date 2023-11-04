@@ -1,0 +1,59 @@
+:root {
+  --primary-color: #0FFF; /* Main color for headers, links, etc. */
+  --secondary-color: #e74c3c; /* Secondary color for buttons, accents, etc. */
+  --background-color: #23272A; /* Background color for the whole page */
+  --text-color: #FFFF; /* Default text color */
+  --head-color: #ff7b00;
+}
+
+* {
+  font-family: 'Quicksand', sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Customize the scrollbar track */
+::-webkit-scrollbar {
+  width: 9px; /* You can adjust the width as needed */
+}
+
+/* Customize the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background-color: #0FFF; /* Change to your desired color */
+}
+
+/* Customize the scrollbar track on hover (optional) */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #0FFF; /* Change to a different color on hover */
+}
+/* Customize the scrollbar track */
+body {
+  scrollbar-face-color: #0FFF; /* Change to your desired color */
+}
+
+/* Customize the scrollbar thumb (the draggable part) */
+body {
+  scrollbar-shadow-color: #0FFF; /* Change to your desired color */
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+h1, h2, h3 {
+  color: var(--primary-color);
+}
+
+a {
+  color: var(--primary-color);
+}
+
+i {
+  color: var(--head-color);
+}
+
+button {
+  background-color: var(--secondary-color);
+  color: white;
+}
